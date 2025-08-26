@@ -8,6 +8,8 @@
 # look and feel
 
 # literally just a test line
+# the above line was made to test my GPG signing key. it works! hooray!
+# commit: eaac380f77
 
 # functions, abbreivations, etc etc
 command zoxide init fish | source

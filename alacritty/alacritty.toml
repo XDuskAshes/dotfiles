@@ -1,6 +1,6 @@
 [window]
 padding = { x = 2, y = 3 }
-opacity = 0.5
+opacity = 0.8
 blur = true
 dynamic_padding = true
 

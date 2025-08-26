@@ -7,6 +7,7 @@
 
 # look and feel
 
+# literally just a test line
 
 # functions, abbreivations, etc etc
 command zoxide init fish | source

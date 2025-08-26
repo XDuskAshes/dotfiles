@@ -22,4 +22,7 @@ ln -sfn $DOTFILES_DIR/config/alacritty $ALACRITTY_CONFIG_DIR
 echo "Install Brew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# WIP
+# cleanup
+echo "Cleaning up"
+rm $HOME/.dotfiles/pm.tmp
+rm $HOME/.dotfiles/dist.tmp

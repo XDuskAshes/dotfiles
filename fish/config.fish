@@ -16,6 +16,11 @@ command zoxide init fish | source
 set -gx BROWSER librewolf
 set fish_prompt_pwd_dir_length 4
 
+function fish_greeting -d "Greeting message"
+    echo "><>" Welcome to the Fish shell. "<><"
+    echo The time is (date "+%I:%M %p"), the date is (date "+%m/%d/%Y").
+end
+
 # stuff that i dont wanna write functions for
 abbr nv nvim
 abbr vim nvim

@@ -1,8 +1,25 @@
 #!/usr/bin/env fish
 
 # variables
-set DOTFILES_DIR "$HOME/.dotfiles"
-set CONFIG_DIR "$HOME/.config"
-set FISH_CONFIG_DIR "$CONFIG_DIR/fish"
-set FF_CONFIG_DIR "$CONFIG_DIR/fastfetch"
+set -l DOTFILES_DIR "$HOME/.dotfiles"
+set -l CONFIG_DIR "$HOME/.config"
+set -l FISH_CONFIG_DIR "$CONFIG_DIR/fish"
+set -l FF_CONFIG_DIR "$CONFIG_DIR/fastfetch"
+set -l ALACRITTY_CONFIG_DIR "$CONFIG_DIR/alacritty"
+set -l PACKAGES "fastfetch alacritty flatpak zoxide neovim discord python-pip"
+set -l INSTALL_COMMAND (cat pm.tmp)
 
+echo "Dusk's Bootstrap Script"
+cd ~
+echo "Install software"
+echo $INSTALL_COMMAND $PACKAGES
+
+echo "Symlink configs"
+ln -sfn $DOTFILES_DIR/config/fish $FISH_CONFIG_DIR
+ln -sfn $DOTFILES_DIR/config/fastfetch $FF_CONFIG_DIR
+ln -sfn $DOTFILES_DIR/config/alacritty $ALACRITTY_CONFIG_DIR
+
+echo "Install Brew"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# WIP

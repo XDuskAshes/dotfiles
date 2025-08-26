@@ -29,7 +29,7 @@ abbr cls clear
 function ls -d "ls wrapper" ; command ls --color=auto -hsa $argv ;end
 function grep -d "grep wrapper" ; command grep --color=auto $argv ; end
 function ff -d "fastfetch wrapper" ; command fastfetch $argv ; end
-function nt -d "New terminal" ; command alacritty $argv ; end
+function nt -d "New terminal" ; command alacritty $argv & ; end
 
 # config reload
 function reload -d "Reload the config"

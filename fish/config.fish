@@ -28,6 +28,8 @@ abbr cls clear
 # basically just aliases kind of but more
 function ls -d "ls wrapper" ; command ls --color=auto -hsa $argv ;end
 function grep -d "grep wrapper" ; command grep --color=auto $argv ; end
+function ff -d "fastfetch wrapper" ; command fastfetch $argv ; end
+function nt -d "New terminal" ; command alacritty $argv ; end
 
 # config reload
 function reload -d "Reload the config"
@@ -42,3 +44,8 @@ end
 function .. -d "Down 1 directory" ; cd .. ; end
 function .... -d "Down 2 directories" ; cd ../.. ; end
 function ...... -d "Down 3 directories" ; cd ../../.. ; end
+
+# making sure our functions get loaded on run
+for file in ~/.config/fish/functions/*.fish
+    source $file
+end

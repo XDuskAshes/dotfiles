@@ -26,3 +26,5 @@ All my dotfiles for the world to see.
 ├── README.md
 └── update-submodules.sh
 ```
+
+NOTE: This is my **second** dotfiles repo. To see the old one (that I borked), go [here](https://github.com/XDuskAshes/dotfiles-old-i-borked-it).

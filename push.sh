@@ -1,5 +1,5 @@
 #!/bin/bash
 
 # push to the two places i put these things
-git push -u codeberg main
-git push -u github main
+echo "Codeberg push" && git push -u codeberg main
+echo "Github push" && git push -u github main

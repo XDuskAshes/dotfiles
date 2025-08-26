@@ -7,12 +7,12 @@ set -l FISH_CONFIG_DIR "$CONFIG_DIR/fish"
 set -l FF_CONFIG_DIR "$CONFIG_DIR/fastfetch"
 set -l ALACRITTY_CONFIG_DIR "$CONFIG_DIR/alacritty"
 set -l PACKAGES "fastfetch alacritty flatpak zoxide neovim discord python-pip"
-set -l INSTALL_COMMAND (cat pm.tmp)
+set -l INSTALL_COMMAND (cat $HOME/.dotfiles/pm.tmp)
 
 echo "Dusk's Bootstrap Script"
 cd ~
 echo "Install software"
-echo $INSTALL_COMMAND $PACKAGES
+eval $INSTALL_COMMAND $PACKAGES
 
 echo "Symlink configs"
 ln -sfn $DOTFILES_DIR/config/fish $FISH_CONFIG_DIR

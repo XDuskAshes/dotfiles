@@ -43,4 +43,4 @@ chsh -s /usr/bin/fish
 git clone https://github.com/XDuskAshes/dotfiles.git ~/.dotfiles
 touch $HOME/.dotfiles/pm.tmp && echo "$PM_INSTALL_COMMAND" > $HOME/.dotfiles/pm.tmp
 touch $HOME/.dotfiles/dist.tmp && echo "$DIST" > $HOME/.dotfiles/dist.tmp
-sudo chmod +x $HOME/.dotfiles/bootstrap.fish && .$HOME/.dotfiles/bootstrap.fish
+sudo chmod +x $HOME/.dotfiles/bootstrap.fish && fish -c $HOME/.dotfiles/bootstrap.fish

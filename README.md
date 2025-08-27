@@ -2,7 +2,7 @@
 
 All my dotfiles for the world to see.
 
-(Note: This repository is not constantly indicative of my current setup. I experiment with things a lot, and add them when I feel like they're "worthy", as it were.)
+This repository is NO LONGER UPDATED. Go to the one on [Codeberg](https://codeberg.org/XDuskAshes/dotfiles) for future updates.
 
 `tree` view:
 
